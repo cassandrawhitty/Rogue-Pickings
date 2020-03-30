@@ -1,149 +1,186 @@
-/****BASE STYLES****/
-
-.body {
-  font-family: 'Myraid Pro' sans-serif;
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 
-/***GRID***/
-
-.full-width {
-  width: 100%;
+html {
+	font-size: 16px;
 }
 
-.third-width {
-  float: left;
-  width: 31%;
-  border: 1px solid #dedbdc;
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
 }
 
-/*****HEADER*****/
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
 h1 {
-  margin-left: 10px;
-  margin-top: 30px;
-  float: left;
-  padding: 10px;
-  text-transform: uppercase;
-  display: inline-block;
-  letter-spacing: -1px;
+	font-size: 1.875em;
 }
-
-.emphasis-1 {
-  color: #77a466;
-}
-
-nav {
-  padding-top: 20px;
-  float: right;
-}
-
-nav ul {
-  float: right;
-}
-
-nav ul li {
-  display: inline-block;
-  text-transform: uppercase;
-  float: left;
-}
-
-a {
-  color: #77a466;
-  text-decoration: none;
-  display: block;
-  padding-left: 20px;
-}
-
-/*****MIDDLE SECTION*****/
-
-#top-image {
-  border: 4px solid #77a466;
-  border-width: 4px 0 4px 0;
-  margin: 0 20px 0 20px;
-  text-align: center;
-}
-
 h2 {
-  color: #77a466;
-  margin: 20px;
+    font-size: 1.25em;
+}
+h3 {
+	font-size: 1.11em;
+}
+h4 {
+	font-size: 1.48em;
 }
 
-#introduction p {
-  margin: 20px;
-  padding: 5px;
-  line-height: 150%;
-  font-size: 18.5px;
+p {
+	font-size: 1.69em;
+	line-height: 21px;
+    padding: 0 30px;
 }
 
-#introduction h2 {
-  text-transform: uppercase;
+/*The widths are in a percentage!*/
+header {
+	height: 110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/******BOTTOM SECTION*****/
-#specials #reviews #contact {
-  display: inline-table;
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 38px 0;
+}
+header h1 span {
+	color: #77a466;
 }
 
-#specials {
-  padding: 10px;
-  line-height: 130%;
+header nav {
+	float: right;
+	padding: 46px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 0 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
 }
 
-#specials ul, #specials li {
-    margin: 0;
-    padding: 0;
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#reviews {
-  padding: 10px;
-  line-height: 18.5px;
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
 }
 
-#contact {
-  line-height: 150%;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 60px;
-  padding-left: 10px;
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
+	line-height: 25px;
 }
 
-
-#specials ul li {
-  list-style-type: none;
-  color: #77a466;
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
 }
 
-#bottom-section h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-variant: small-caps;
-  font-size: 16px;
-  text-align: left;
-  font-weight: bold;
+.section-one h4 {
+	padding: 10px 0;
 }
 
-
-
-/******FOOTER******/
-
-#footer {
-  clear: both;
-  text-align: center;
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
 
-#footer h2 {
-  color: black;
-  padding: 20px;
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
 }
 
-.emphasis-2 {
-  color: #77a466;
-  font-family: 'Pacifico', cursive;
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
 }
 
-.first-half {
-  text-transform: uppercase;
+.reviews {
+	color: #333;
+	font-size: 16px;
+	line-height: 21px;
 }
 
-.second-half {
-  text-transform: uppercase;
+.address {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
 }
