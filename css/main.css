@@ -20,7 +20,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	text-align: center;
 	padding: 2em;
 }
 
@@ -55,8 +54,14 @@ p {
 
 /*The widths are in a percentage!*/
 header {
+	text-align: center;
 	border-bottom: 0.2em solid #77a466;
 	width: 100%;
+}
+
+h1 {
+    padding-bottom: 0.5em;
+	border-bottom: 0.1em solid #77a466;
 }
 
 header h1 span {
@@ -66,25 +71,24 @@ header h1 span {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1.5em;
-	line-height: 2em;
 }
 
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-	padding-right: 2em;
+	padding-right: 3em;
 }
 
 ul {
 	list-style-type: none;
+	line-height: 3.5em;
 }
 
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 }
@@ -108,8 +112,7 @@ ul {
 .section-two,
 .section-three {
 	border-top: 1px solid #eee;
-	text-align: center;
-	width: 80%;
+	width: 100%;
 }
 
 .menu {
