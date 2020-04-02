@@ -76,7 +76,7 @@ header nav ul li {
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-	padding-right: 3em;
+	padding-right: 1.2em;
 }
 
 ul {
@@ -84,7 +84,6 @@ ul {
 	line-height: 3.5em;
 }
 
-/*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
 	display: flex;
@@ -136,7 +135,6 @@ ul {
 	line-height: 1.7em;
 }
 
-/*The widths are in a percentage!*/
 footer {
 	border-top: 0.2em solid #eee;
 	text-align: center;
@@ -186,12 +184,14 @@ header {
 	flex-wrap: wrap;
 }
 
+.bottom-section {
+	display: flex;
+	align-items: flex-start;
+}
+
 .section-one,
 .section-two,
 .section-three {
-    flex: display;
-    justify-content: center;
-    align-items: flex-start;
 	width: 33%
 }
 
@@ -217,21 +217,16 @@ footer {
 /*****DESKTOP STYLES*****/
 @media all and (min-width:1200px) {
 
-	header nav ul {
-		 display: flex;
-		 justify-content: space-between;
-	 }
-
-	 header h1 {
-	 	float: left;
+	 header {
 	 	display: flex;
 	 	justify-content: flex-start;
 	 	border: none;
 	 }
 
-	 header nav {
-	 	float: right;
-	 	display: flex;
-	 	justify-content: flex-end;
-	 }
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		padding-left: 19em;
+	}
+
 }
