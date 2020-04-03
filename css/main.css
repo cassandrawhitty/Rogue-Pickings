@@ -221,12 +221,16 @@ footer {
 	 	display: flex;
 	 	justify-content: flex-start;
 	 	border: none;
+	 	justify-content: space-between;
 	 }
 
 	ul {
 		display: flex;
-		justify-content: flex-end;
-		padding-left: 19em;
 	}
+
+	.menu {
+    	display: flex;
+    	flex-direction: column;
+    }
 
 }
